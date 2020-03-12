@@ -36,8 +36,20 @@ header img {
     box-sizing: border-box;
 }
 
-h1 span {
+header span,
+header h2,
+i {
     color: var(--accentColor);
+    display: inline-block !important;
+}
+
+.gg-pen {
+    top: -8px;
+}
+
+header h2 span {
+    padding-top: 5px;
+    border-bottom: 2px solid;
 }
 
 
