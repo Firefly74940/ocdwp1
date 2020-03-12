@@ -1,9 +1,12 @@
 /*Mise en page globale*/
 
 * {
-    --accentColor: #3d3db5;
+    --accentColor: #4f4fcc;
+    --lightTextColor: #141414;
+    --textColor: #0e0e0e;
     margin: 0;
     padding: 0;
+    color: var(--lightTextColor);
 }
 
 header>figure,
@@ -34,6 +37,8 @@ header img {
     display: block;
     /*margin auto only work on block elements*/
     box-sizing: border-box;
+    filter: drop-shadow(0 0 5px black);
+    ;
 }
 
 header span,
@@ -47,6 +52,14 @@ i {
     top: -8px;
 }
 
+h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-top: 25px;
+    color: var(--textColor);
+}
+
 header h2 span {
     padding-top: 5px;
     border-bottom: 2px solid;
@@ -57,14 +70,41 @@ header h2 span {
 
 aside h2 {
     color: var(--accentColor);
-    background-color: black;
+    background-color: var(--lightTextColor);
     padding: 15px;
     text-align: center;
+    font-size: 27px;
+    font-weight: 100;
+    font-family: monospace;
+}
+
+aside a {
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
 }
 
 aside {
     display: flex;
     flex-direction: column;
+}
+
+aside dl,
+aside p {
+    margin-bottom: 25px;
+    padding: 15px;
+    font-size: large;
+}
+
+aside dt {
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+
+aside dd {
+    padding-left: 5px;
 }
 
 
@@ -83,6 +123,10 @@ aside {
 header>figure>figcaption>*,
 article>* {
     padding-left: 20px;
+}
+
+article h2 {
+    color: var(--textColor);
 }
 
 hr {
