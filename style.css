@@ -1,7 +1,7 @@
 /*Mise en page globale*/
 
 * {
-    --accentColor: blue;
+    --accentColor: #3d3db5;
     margin: 0;
     padding: 0;
 }
@@ -20,7 +20,6 @@ section>aside {
 header>figure>figcaption,
 section>article {
     width: 70%;
-    background-color: red;
 }
 
 
@@ -49,6 +48,21 @@ aside h2 {
     background-color: black;
     padding: 15px;
     text-align: center;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* on fait prendre toute la place à loisir et on positione son contenu à la fin*/
+
+.loisir {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 
